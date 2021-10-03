@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="common/images/LOGO.png">
+
+    <title>Bhagwati Group</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- Bootstrap -->
+
+    <link href="common/css/bhagwati.in.bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="common/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- responsive devices styles -->
+    <link rel="stylesheet" media="screen" href="common/css/responsive-leyouts.css" type="text/css" />
+
+    <!-- REVOLUTION SLIDER -->
+    <link rel="stylesheet" type="text/css" href="common/css/fullwidth.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="common/css/settings.css" media="screen" />
+
+    <!--gallery  css-->
+    <link rel="stylesheet" href="common/css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="common/css/blueimp-gallery.min.css">
+
+    <link rel="stylesheet" href="common/css/photoswipe.css">
+    <link rel="stylesheet" href="common/css/default-skin.css">
+
+    <link rel="stylesheet" href="common/css/bg_projects.css">
+    <link href="common/css/main.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="common/css/fontsGoogleapis.css">
+
+    <!-- LOAD CSS FILES -->
+    <link href="common/css/main1.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="common/js/html5shiv.min.js"></script>
+      <script src="common/js/respond.min.js"></script>
+    <![endif]-->
+    <link href="common/css/main.css" rel='stylesheet' type='text/css'>
+
+    <!-- Index-Page-CSS -->
+    <link rel="stylesheet" href="web/css/style.css" type="text/css" media="all">
+    <!-- Index-Page-CSS -->
+    <link rel="stylesheet" href="common/asset/web/css/style.css" type="text/css" media="all">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <style type="text/css">
+   		 body {
+		    font-family: 'Montserrat'!important;
+		}
+        #faqDiv .faqTextClass {
+            background-color: #D4C1B6;
+            margin-top: 5%;
+        }
+        
+        #faqDiv .faqTextClass .col-sm-6 h1 {
+            margin-top: 45%;
+            color: #101317;
+            text-align: center;
+        }
+        
+        #faqDiv .faqTextClass .col-sm-6 h3 {
+            margin-bottom: 12%;
+            color: #101317;
+            text-align: center;
+        }
+        
+        #testimonialsDiv .testimonialsTextClass {
+            background-color: black;
+            margin-top: -10px;
+        }
+        
+        #testimonialsDiv .testimonialsTextClass .col-sm-8 h3 {
+            color: #D4C1B6;
+            text-align: justify;
+            cursor: pointer;
+        }
+        
+        #testimonialsDiv .testimonialsTextClass .col-sm-8 h4 {
+            color: white;
+            text-align: justify;
+        }
+        
+        .container_full {
+            margin-top: 8%;
+        }
+        
+        .logoImg {
+            width: 45%;
+            margin-top: -28%;
+            margin-left: 1%;
+        }
+        
+        ul.nav {
+            margin-top: 0px;
+        }
+        
+        .bgImages {
+            margin-top: 5px;
+        }
+    </style>
+
+    <style type="text/css">
+        @media screen and (max-width:376px) {
+             
+			 
+            .bgImages {
+                margin-top: 0px;
+            }
+            .container_full {
+                margin-top: 110px;
+            }
+            .logoImg {
+                width: 45%;
+                margin-top: -26%;
+                margin-left: 1%;
+            }
+            .navbar-toggle {
+                margin-top: -10px;
+                margin-right: 25px;
+            }
+            .drop_arrow {
+                margin-left: 5%;
+            }
+            .navbar-nav {
+                background-color: none!important;
+            }
+            .pull-left {
+                margin-bottom: 10px;
+            }
+            .form-control {
+                background-color: #D4C1B6;
+                color: black;
+            }
+            #faqDiv .faqTextClass {
+                background-color: #D4C1B6;
+                margin-top: 30%;
+            }
+            #faqDiv .faqTextClass .col-sm-6 h1 {
+                margin-top: 12%;
+                color: #101317;
+                text-align: center;
+                font-size: 25px;
+            }
+            #faqDiv .faqTextClass .col-sm-6 h3 {
+                margin-bottom: 12%;
+                color: #101317;
+                text-align: center;
+                font-size: 21px;
+            }
+            #testimonialsDiv .testimonialsTextClass .col-sm-8 h3 {
+                color: #D4C1B6;
+                text-align: justify;
+                cursor: pointer;
+                font-size: 18px;
+            }
+            #testimonialsDiv .testimonialsTextClass .col-sm-8 h4 {
+                color: white;
+                text-align: justify;
+                font-size: 17px;
+            }
+        }
+        
+        @media (min-width: 376px) {
+            .logoImg {
+                width: 45%;
+                margin-top: -16%;
+                margin-left: 1%;
+            }
+			 
+            #faqDiv .faqTextClass {
+                background-color: #D4C1B6;
+                margin-top: 30%;
+            }
+            #faqDiv .faqTextClass .col-sm-6 h1 {
+                margin-top: 12%;
+                color: #101317;
+                text-align: center;
+                font-size: 25px;
+            }
+            #faqDiv .faqTextClass .col-sm-6 h3 {
+                margin-bottom: 12%;
+                color: #101317;
+                text-align: center;
+                font-size: 21px;
+            }
+            #testimonialsDiv .testimonialsTextClass .col-sm-8 h3 {
+                color: #D4C1B6;
+                text-align: justify;
+                cursor: pointer;
+                font-size: 18px;
+            }
+            #testimonialsDiv .testimonialsTextClass .col-sm-8 h4 {
+                color: white;
+                text-align: justify;
+                font-size: 17px;
+            }
+        }
+        
+         @media only screen and (max-width:480px) {
+            /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+            .navbar-collapse {
+                padding-right: 9px;
+                padding-left: 3px;
+                text-align: center;
+			    width: 50%;
+			    margin-left: 25%!important;
+            }
+        }
+        
+        @media (min-width:641px) {
+            /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+        }
+        
+        @media (min-width:961px) {
+            .logoImg {
+                width: 50%;
+                margin-top: -29%;
+                margin-left: 2%;
+            }
+            #faqDiv .faqTextClass {
+                background-color: #D4C1B6;
+                margin-top: 10%;
+            }
+			.navbar-collapse {
+                margin-bottom: 1%;
+				margin-top: -5%;				
+            }
+			 #faqDiv .faqTextClass .col-sm-6 h1 {
+                
+                font-size: 25px;
+            }
+            
+            #testimonialsDiv .testimonialsTextClass .col-sm-8 h3 {
+	            color: #D4C1B6;
+	            text-align: justify;
+	            cursor: pointer;
+	            font-size: 22px;
+	        }
+	        
+	        #testimonialsDiv .testimonialsTextClass .col-sm-8 h4 {
+	            color: white;
+	            text-align: justify;
+	            font-size: 20px;
+	        }
+        }
+		
+		
+        
+        @media (min-width:1025px) {
+            /* big landscape tablets, laptops, and desktops */
+        }
+        
+        @media (min-width:1281px) {
+            /* hi-res laptops and desktops */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header-aits" id="home">
+
+        <div class="header-info-w3ls" style="background: black;">
+            <div class="top-contact-aits-w3l container">
+            </div>
+
+            <!-- Navigation -->
+            <nav class="navbar container navbar-inverse navbar-default">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a class="navbar-brand logo-w3l button" href="home.html"><img src="common/images/Logo.png" class="logoImg" /></a>
+                    </div>
+
+                    <!-- //Logo -->
+                </div>
+
+                <div id="navbar" class="navbar-collapse navbar-right collapse" >
+                    <ul class="nav navbar-nav navbar-right cross-effect" id="cross-effect">
+                        <li><a class="cross-effect scroll" href="home.html">Home</a></li>
+                        <li><a class="cross-effect scroll" href="home.html#aboutDiv">About</a></li>
+                        <li><a class="cross-effect scroll" href="home.html#workfolio">Projects</a></li>
+                        <li><a class="cross-effect scroll" href="home.html#contactDiv">Contact</a></li>
+                        <li><a class="cross-effect scroll" href="home.html#testimonials">Testimonials</a></li>
+                        <li><a class="cross-effect scroll" href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <!-- //Navbar-Collapse -->
+
+            </nav>
+            <!-- //Navigation -->
+
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+    <!-- //Header -->
+
+    <div id="faqDiv">
+        <div class="col-sm-12 faqTextClass">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div>
+                    <h1>Frequently Asked Questions</h1>
+                    <h3>What do you want to know?</h3>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+    <div id="testimonialsDiv">
+        <div class="col-sm-12 testimonialsTextClass">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <br>
+                <br>
+                <h3 id="question1" class="1" title="Click to View Answer">What is the procedure for domestic buyers to avail home
+					loans?</h3>
+                <br>
+                <h4 id="answer1">
+					Here are the legal documents required to obtain housing loans:<br>
+					(a) Income Tax Returns <br>(b) Salary Slips<br> (c)
+					Residence Proof (if you have any)<br> (d) Proof of
+					Identification<br> (e) Auditors Report <br> <br>The
+					loan will be sanctioned after the selection of property and
+					submission of the required legal documents. The process might take
+					some time as each document needs to be verified for the safety of
+					the applicant. The 230 A Clearance of the seller and / or 37I
+					clearance from the appropriate income tax authorities (if
+					applicable) is also needed. Once the above has been submitted and
+					verified, the registration of the conveyance deed and investment of
+					the applicant's own contribution and the loan amount will be
+					disbursed by the bank. The disbursement will be in favor of the
+					builder. <br> <br> Documents required for disbursement:<br>1.
+					Loan agreements <br>2.Disbursement requests <br>3.Post-dated
+					cheques <br>4.Personal guarantors’ document<br> <br>
+				</h4>
+
+                <h3 id="question2" class="2" title="Click to View Answer">Who can purchase immovable property in India?</h3>
+                <br>
+                <h4 id="answer2">
+					Under the general permission granted by RBI, the following
+					categories can freely purchase immovable property in India:<br>
+					<br> (a) Non-Resident Indian (NRI)- that is a citizen of India
+					residing outside India<br> <br> (b) Person of Indian
+					Origin (PIO)- that is an individual (not being a citizen of
+					Pakistan or Bangladesh or Sri Lanka or Afghanistan or China or Iran
+					or Nepal or Bhutan), who <br> <br> (i) at any time, held
+					Indian passport or <br> <br> (ii) who or either of whose
+					father or whose grandfather was a citizen of India by virtue of the
+					Constitution of India or the Citizenship Act, 1955 (57 of 1955).<br>
+					<br> The general permission, however, covers only purchase of
+					residential and commercial property and not for purchase of
+					agricultural land/plantation property/farm house in India.<br>
+					<br> (c) OCI can purchase immovable property in India except
+					agricultural land/plantation property/farmhouse.<br> <br>
+					<br>
+				</h4>
+
+                <h3 id="question3" class="3" title="Click to View Answer">What documents are required by NRIs, PIOs and OCIs for
+					buying property?</h3>
+                <br>
+                <h4 id="answer3">
+					- Pan card (Permanent Account Number) <br> <br> - OCI/PIO
+					card (In case of OCI/PIO) <br> <br> - Passport (In case
+					of NRI) <br> <br> - Passport size photographs <br> <br>
+					- Address proof <br> <br>
+
+				</h4>
+
+                <h3 id="question4" class="4" title="Click to View Answer">What are the Tax compliances for acquiring property for
+					NRIs, PIOs and OCIs?</h3>
+                <br>
+                <h4 id="answer4">
+					Mere acquisition of property does not attract income tax in the
+					hands of buyer. However, any income accruing to the seller of the
+					property is subject to income tax as the income constitute capital
+					gains. In this regard, buyer of the property has to deduct Tax
+					Deducted at Source (TDS) at the rate of 1% on total consideration
+					(as and when payments are made). Such tax has to be deposited to
+					the government by within a due date along with the form in a
+					prescribed manner. Further details on procedure of payment of tax
+					and filing form is mentioned at <a
+						href="https://www.tin-nsdl.com/TDS/TDS-Introduction.php"><u>
+							https://www.tin-nsdl.com/TDS/TDS-Introduction.php</u></a>
+				</h4>
+
+                <h3 id="question5" class="5" title="Click to View Answer">What is the Tax treatment for income generated from
+					property selling or renting for NRI/ PIO/OCI?</h3>
+                <br>
+                <h4 id="answer5">The mere acquisition of property does not attract income
+					tax. However, any income accruing from the ownership of it, in the
+					form of rent (if it is let out)/annual value of the house (if is
+					not let out and it is not the only residential property owned by
+					that person in India) and/or capital gains (short term or long
+					term) arising on the sale of this house or part thereof is taxable
+					in the hands of the owner.</h4>
+
+                <h3 id="question6" class="6" title="Click to View Answer">Do NRI/PIO/OCI have to file return in India for their
+					property rental income and Capital Gains Tax?</h3>
+                <br>
+                <h4 id="answer6">The taxes have to be paid if a person is selling this
+					property situated in India. Rental income earned is taxable in
+					India, and they will have to obtain a PAN and file return of income
+					if they have rented this property. On sale of the property, the
+					profit on sale shall be subject to capital gains. If they have held
+					the property for less than or equal to 3 years after taking actual
+					possession then the gains would be short term capital gains, which
+					are to be included in their total income as tax as per the normal
+					slab rates shall be payable and if the property has been held for
+					more then 3 years then the resultant gain would be long term
+					capital gains subject to 20% tax plus applicable cess.</h4>
+
+                <h3 id="question7" class="7" title="Click to View Answer">How does the Double Taxation Avoidance Agreement work in
+					the context of tax on income and Capital Gains tax paid in India by
+					NRIs?</h3>
+                <br>
+                <h4 id="answer7">India has DTAA’s with several countries which give a
+					favourable tax treatment in respect of certain heads of income.
+					However, in case of sale of immovable property, the DTAA with most
+					countries provide that the capital gains will be taxed in the
+					country where the immovable property is situated. Hence, the
+					non-resident will be subject to tax in India on the capital gains
+					which arise on the sale of immovable property in India. Letting of
+					immovable property in India would be taxed in India under most tax
+					treaties in view of the fact that the property is situated in
+					India.</h4>
+
+                <h3 id="question8" class="8" title="Click to View Answer">Does Capital Gains Tax (CGT) apply to NRI/PIO/OCI?</h3>
+                <br>
+                <h4 id="answer8">Yes. Long-term and short-term capital gains are taxable in
+					the hands of non-residents.</h4>
+
+                <h3 id="question9" class="9" title="Click to View Answer">How is Rate of CGT computed?</h3>
+                <br>
+                <h4 id="answer9">
+					Type of asset: Assets like house property, land and building,
+					jewellery, development rights etc.<br> <br> Rate of tax
+					deduction at source (TDS)<br> <br> Long term: 20.6% <br>
+					Short term: 30.9%<br> <br> Exemption available (only for
+					long term capital gains)<br> <br> The long term capital
+					gains arising on sale of a residential house can be invested in
+					buying/ constructing another residential house, within the
+					prescribed time. The exemption is restricted to the amount of
+					capital gains or amount invested in new residential house,
+					whichever is lower.<br> <br> If the amount of capital
+					gains is invested in bonds of National Highways Authority of India
+					(NHAI) or Rural Electrification Corporation, then the entire
+					capital gains is exempted, else the proportionate gain is exempted.
+					As per the financial budget 2007-08, a cap of Rs. 50 lakhs has been
+					imposed on investment that can be made in capital tax saving bonds.
+				</h4>
+
+                <h3 id="question10" class="10" title="Click to View Answer">Who should file tax returns?</h3>
+                <br>
+                <h4 id="answer10">
+					If you are an NRI/OCI/PIO, you would have to file your income tax
+					returns if you fulfill either of these conditions:<br> <br>
+					(a) Your taxable income in India during the year was above the
+					basic exemption limit of 1.6 lakh OR <br> <br> (b) You
+					have earned short-term or long-term capital gains from sale of any
+					investments or assets, even if the gains are less than the basic
+					exemption limit. <br> <br> Note: The enhanced exemption
+					limit for senior citizens and women is applicable only to residents
+					and not to non-residents.
+				</h4>
+
+                <h3 id="question11" class="11" title="Click to View Answer">Are there any exceptions?</h3>
+                <br>
+                <h4 id="answer11">
+					Yes, there are two exceptions:<br> <br> (a) If your
+					taxable income consisted only of investment income (interest)
+					and/or capital gains income and if tax has been deducted at source
+					from such income, you do not have to file your tax returns.<br>
+					<br> (b) If you earned long term capital gains from the sale
+					of equity shares or equity mutual funds, you do not have to pay any
+					tax and therefore you do not have to include that in your tax
+					return <br> <br> Tip: You may also file a tax return if
+					you have to claim a refund. This may happen where the tax deducted
+					at source is more than the actual tax liability. Suppose your
+					taxable income for the year was below 1.6 lakh but the bank
+					deducted tax at source on your interest amount, you can claim a
+					refund by filing your tax return.<br> <br> Another
+					instance is when you have a capital loss that can be set-off
+					against capital gains. Tax may have been deducted at source on the
+					capital gains, but you can set-off (or carry forward) capital loss
+					against the gain and lower your actual tax liability. In such
+					cases, you would need to file a tax return.
+				</h4>
+
+                <h3 id="question12" class="12" title="Click to View Answer">What’s the best way to file tax returns?</h3>
+                <br>
+                <h4 id="answer12">
+					Traditionally, you could file your return either by giving a power
+					of attorney to someone in India or by sending your form and
+					documents to a tax expert in India who would then file returns on
+					your behalf.<br> <br> But nowadays, the easiest option
+					for NRIs to file their Indian tax returns is by using the online
+					platform. There are several options to file online.
+				</h4>
+
+                <h3 id="question13" class="13" title="Click to View Answer">What are the rules governing the repatriation of the
+					proceeds of sale of immovable properties by NRI/PIO as prescribed
+					by the Reserve Bank of India?</h3>
+                <br>
+                <h4 id="answer13">
+					(a) If the property was acquired out of foreign exchange sources
+					i.e. remitted through normal banking channels/by debit to
+					NRE/FCNR(B) account, the amount to be repatriated should not exceed
+					the amount paid for the property:<br> <br> (i) In foreign
+					exchange received through normal banking channel or <br> <br>
+					(ii) By debit to NRE account (foreign currency equivalent, as on
+					the date of payment) or debit to FCNR(B) account. <br> <br>
+					Repatriation of sale proceeds of residential property purchased by
+					NRI’s/PIO’s out of foreign exchange is restricted to not more than
+					two such properties. Capital gains, if any, may be credited to the
+					NRO account from where the NRI’s/PIO’s may repatriate an account up
+					to USD one million, per financial year, as discussed below.<br>
+					(b) If the property was acquired out of Rupee sources, NRI/PIO may
+					remit an amount up to USD one million, per financial year, out of
+					the balances held in the NRO account (inclusive of sale proceeds of
+					assets acquired by way of inheritance or settlement), for all the
+					bonafide purposes to the satisfaction of the Authorized Dealer bank
+					and subject to tax compliance. The NRI/PIO may use this facility to
+					remit capital gains, where the acquisition of the subject property
+					was made by funds sourced by remittance through normal banking
+					channels/by debit to NRE/FCNR(B) account
+				</h4>
+
+                <h3 id="question14" class="14" title="Click to View Answer">Is the rental income from property repatriable and what are
+					the RBI rules?</h3>
+                <br>
+                <h4 id="answer14">The rental income, being a current account transaction, is
+					repatriable, subject to the appropriate deduction of tax and the
+					certification thereof by a Chartered Accountant in practice.
+					Repatriation of sale proceeds is subject to certain conditions. The
+					amount of repatriation cannot exceed the amount paid for
+					acquisition of the immovable property in foreign exchange.</h4>
+
+                <h3 id="question15" class="15" title="Click to View Answer">Are NRI/PIO/OCI eligible for Housing loans to buy property
+					from any Indian Bank?</h3>
+                <br>
+                <h4 id="answer15">
+					An authorised dealer or a housing finance institution in India
+					approved by the National Housing Bank may provide housing loan to a
+					non-resident Indian or a person of Indian origin residing outside
+					India. for acquisition of a residential accommodation in India,
+					subject to the following conditions, namely:<br>
+					<br> (a) the quantum of loans, margin money and the period of
+					repayment shall be at par with those applicable to housing finance
+					provided to a person residing in India. <br>
+					<br> (b) the loan amount shall not be credited to Non-resident
+					External (NRE)/Foreign Currency Non-resident (FCNR)/Non-resident
+					non-repatriable (NRNR) account of the borrower. <br>
+					<br> (c) the loan shall be fully secured by equitable mortgage
+					by deposit of title deal of the property proposed to be acquired,
+					and if necessary, also be lien on the borrower’s other assets in
+					India.<br>
+					<br> (d) the instalment of loan, interest and other charges,
+					if any, shall be paid by the borrower by remittances from outside
+					India through normal banking channels or out of funds in his
+					Non-resident External (NRE)/Foreign Currency Non-resident
+					(FCNR)/Non-resident Non-repatriable (NRNR)/Non-resident Ordinary
+					(NRO)/non-resident Special Rupee (NRSR) account in India, or out of
+					rental income derived from renting out the property acquired by
+					utilisation of the loan or by any relative of the borrower in India
+					by crediting the borrower’s loan account through the bank account
+					of such relative (The word ‘relative’ means ‘relative’ as defined
+					in section 6 of the Companies Act, 1956.)<br>
+					<br> (e) the rate of interest on the loan shall conform to the
+					directives issued by the Reserve Bank of India or, as the case may
+					be, the National Housing Bank.
+				</h4>
+                <br>
+
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+
+    <!-- <div id="testimonialsDiv">
+		<div class="col-sm-12 testimonialsTextClass">
+			<h4>contact@bhagwatigroup.in</h4>
+			<h4>02227816117</h4>
+			<h4>1306, Real Teck Park, Plot 39/2, Sec 30A, Vashi, Navi
+				Mumbai, Maharashtra, India</h4>
+		</div>
+	</div>
+ -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="common/js/ajax.jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function() {
+            $(".nav li").click(function() {
+                $('.nav li').attr('class', '');
+                $(this).attr('class', 'active');
+            });
+
+            $('#answer1,#answer2,#answer3,#answer4,#answer5,#answer6,#answer7,#answer8,#answer9,#answer10,#answer11,#answer12,#answer13,#answer14,#answer15').hide();
+            $(".testimonialsTextClass h3").click(function() {
+                var abc = $(this).attr('class');
+                $('#answer' + abc).toggle();
+            });
+
+        });
+    </script>
+    <script src="common/js/maxcdn.bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+</body>
+
+</html>
